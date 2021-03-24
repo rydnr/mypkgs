@@ -1,2 +1,2 @@
-# mypkgs
-My Nix stuff
+# rydnr ovelay
+My Nix overlay
