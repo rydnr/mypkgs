@@ -1,4 +1,6 @@
-self: super:
+self: super: {
+  my.idea-ultimate-2020_3 =
+    (self.callPackage ./pkgs/idea-ultimate { }).intellij-idea;
 
-let callPackage = super.lib.callPackageWith super;
-in { idea-ultimate-2020_3 = callPackage ./pkgs/idea-ultimate { }; }
+  my.smalltalk-vm = (self.callPackage ./pkgs/smalltalk-vm { }).spur;
+}
